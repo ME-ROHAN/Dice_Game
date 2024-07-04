@@ -132,7 +132,9 @@ const Gamezone = () => {
         </div>
 
         <div className="mt-20 w-1/3  flex flex-col justify-center items-center ">
-          <button className="bg-black hover:bg-slate-800 text-white w-[230px] rounded-lg py-2" onClick={showrul}>Show Rules</button>
+         
+         <div className="flex flex-col justify-center items-center  mb-10">
+           <button className="bg-black  hover:bg-slate-800 text-white w-[230px] rounded-lg py-2" onClick={showrul}>Show Rules</button>
          
          { (showrule === true) && <div className=" mr-10 ml-16 bg-[#FBF1F1] py-2 px-10 mt-10 " >
             <h1 className="text-2xl mt-10 mb-5 font-bold "> How to play dice game</h1>
@@ -151,14 +153,16 @@ const Gamezone = () => {
           </div>
           
          } 
-      <div>
-        <Link to="/"><button className="flex justify-center items-center gap-3 group absolute bottom-[100px]  right-16 border-solid border-[1px] border-black hover:bg-slate-700 hover:text-white text-black px-5 py-1 mt-4 rounded-md">
+         </div>
+         
+      
+        <Link to="/"><button className="mr-4 mt-5  flex justify-center items-center gap-3 group absolute bottom-[100px]  right-16 border-solid border-[1px] border-black hover:bg-slate-700 hover:text-white text-black px-5 py-1 rounded-md">
           Go back to Dashboard
           <img  className="group-hover:visible invisible h-5" src="src/pic/arr.svg" alt="" />
           </button>
         
       </Link>
-      </div>
+     
        
      
      </div>
